@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Classic Snake</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="game-shell">
+      <section class="top-bar" aria-label="Game status">
+        <div>
+          <p class="label">Score</p>
+          <p id="score" class="value">0</p>
+        </div>
+        <div>
+          <p class="label">Best</p>
+          <p id="best-score" class="value">0</p>
+        </div>
+        <button id="pause-button" class="icon-button" type="button" aria-label="Pause game" title="Pause">II</button>
+      </section>
+
+      <canvas id="game-board" width="480" height="480" aria-label="Snake game board"></canvas>
+
+      <section class="controls" aria-label="Game controls">
+        <button class="direction-button up" type="button" data-direction="up" aria-label="Move up">▲</button>
+        <button class="direction-button left" type="button" data-direction="left" aria-label="Move left">◀</button>
+        <button class="direction-button down" type="button" data-direction="down" aria-label="Move down">▼</button>
+        <button class="direction-button right" type="button" data-direction="right" aria-label="Move right">▶</button>
+      </section>
+
+      <div id="overlay" class="overlay">
+        <h1>Snake</h1>
+        <p id="message">Press Space or tap Start</p>
+        <button id="start-button" class="primary-button" type="button">Start</button>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
